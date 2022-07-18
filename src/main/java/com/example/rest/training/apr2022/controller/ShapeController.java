@@ -1,4 +1,4 @@
-package com.example.rest.training.controller;
+package com.example.rest.training.apr2022.controller;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

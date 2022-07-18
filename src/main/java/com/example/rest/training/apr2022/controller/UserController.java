@@ -1,8 +1,8 @@
-package com.example.rest.training.controller;
+package com.example.rest.training.apr2022.controller;
 
-import com.example.rest.training.entity.Employee;
-import com.example.rest.training.model.User;
-import com.example.rest.training.repo.EmployeeRepo;
+import com.example.rest.training.apr2022.entity.Employee;
+import com.example.rest.training.apr2022.model.User;
+import com.example.rest.training.apr2022.repo.EmployeeRepo;
 import java.util.List;
 import java.util.stream.Collectors;
 import javax.ws.rs.DELETE;

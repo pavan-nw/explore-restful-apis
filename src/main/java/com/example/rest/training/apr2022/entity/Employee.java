@@ -1,34 +1,32 @@
-package com.example.rest.training.model;
+package com.example.rest.training.apr2022.entity;
 
 import java.io.Serializable;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-@XmlAccessorType(XmlAccessType.NONE)
-@XmlRootElement(name = "user")
-public class User implements Serializable {
+@Entity
+@Table(name = "employee")
+public class Employee implements Serializable {
 
-    private static final long serialVersionUID = 1L;
-
-    @XmlElement(name = "id")
+    @Id
     private Integer id;
 
-    @XmlElement(name = "name")
+    @Column(name = "name")
     private String name;
 
-    @XmlElement(name = "salary")
+    @Column(name = "city")
+    private String city;
+
+    @Column(name = "salary")
     private Integer salary;
 
-    @XmlElement(name = "dept")
-    private Integer dept;
+    @Column(name = "department")
+    private Integer department;
 
-    @XmlElement(name = "incentive")
+    @Column(name = "incentive")
     private Integer incentive;
-
-    @XmlElement(name = "city")
-    private String city;
 
     public Integer getId() {
         return id;
@@ -62,12 +60,12 @@ public class User implements Serializable {
         this.salary = salary;
     }
 
-    public Integer getDept() {
-        return dept;
+    public Integer getDepartment() {
+        return department;
     }
 
-    public void setDept(Integer dept) {
-        this.dept = dept;
+    public void setDepartment(Integer department) {
+        this.department = department;
     }
 
     public Integer getIncentive() {
